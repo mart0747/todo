@@ -15,6 +15,9 @@
     "type": "git",
     "url": "https://github.com/mart0747/todo.git"
   },
+  "scripts": {
+    "test": "mocha -u tdd"  
+  },
   "private": "true",
   "devDependencies": {
     "chai": "^3.5.0",
