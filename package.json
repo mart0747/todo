@@ -16,11 +16,12 @@
     "url": "https://github.com/mart0747/todo.git"
   },
   "scripts": {
-    "test": "mocha -u tdd"  
+    "test": "mocha -u tdd"
   },
   "private": "true",
   "devDependencies": {
     "chai": "^3.5.0",
+    "mocha": "^2.4.5",
     "restler": "^3.4.0"
   }
 }
