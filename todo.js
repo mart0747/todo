@@ -83,12 +83,8 @@ app.post('/api/todos', function(req,res){
         if (err) 
             return res.status(500).send(err);
         
-        Todo.find(function(err, todos){
-            if(err)
-                return res.status(500).send(err);
-            
-            res.json(todos);
-        });
+               
+        res.json( { id : a._id });
     });
     
 });

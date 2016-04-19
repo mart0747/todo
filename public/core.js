@@ -17,7 +17,12 @@ function mainController($scope, $http) {
         $http.post('/api/todos', $scope.formData)
             .success(function(data){
                 $scope.formData = {};
-                $scope.todos = data;
+                
+                $http.get('api/todos')
+                    .success(function(data){ 
+                        $scope.todos = data;
+                    });
+                
                 console.log(data);
             })
             .error(function(data){
